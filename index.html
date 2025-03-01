@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div class="form">
+            <input type="text" id="alimento" placeholder="Nombre del alimento">
+            <select id="categoria">
+                <option value="Frutas">Frutas</option>
+                <option value="Lácteos">Lácteos</option>
+                <option value="Congelados">Congelados</option>
+                <option value="Dulces">Dulces</option>
+                <option value="Otros">Otros</option>
+            </select>
+            <button id="agregar">Agregar</button>
+        </div>
+        <div id="lista-compras">
+            <h2>Tu lista de compras:</h2>
+            <ul id="frutas">
+                <li><strong>Frutas:</strong></li>
+            </ul>
+            <ul id="lacteos">
+                <li><strong>Lácteos:</strong></li>
+            </ul>
+            <ul id="congelados">
+                <li><strong>Congelados:</strong></li>
+            </ul>
+            <ul id="dulces">
+                <li><strong>Dulces:</strong></li>
+            </ul>
+            <ul id="otros">
+                <li><strong>Otros:</strong></li>
+            </ul>
+        </div>
+        <button id="mostrar-lista">Mostrar Lista</button>
+        <textarea id="resultado-lista" readonly></textarea>
+    </div>
+    <script src="frutas.js"></script>
+</body>
+
+</html>
